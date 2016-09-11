@@ -1,14 +1,28 @@
 # simpleTooltips
 This is a very simple tooltip script.
 
-There are three steps to use this. 
+## Usage
+There are three steps to install this plugin. 
+
+### Step 1
+
+Download the tooltip.js and include it in your project.
+
+Example:
+``` HTML
+<head>
+  ...
+  <script type="text/javascript" src="tooltips.js"></script>
+  ...
+</head>
+```
 
 ### Step 1
 
 Set up your HTML so that the tooltip is the immediate child of the element you want to have a tooltip. I always recommend using a ```<span>``` element for your tooltip. The script will always display tooltips as blocks, and spans can fit inside elements like ```<p>```'s that wouldn't otherwise let a block-level element inside.
 
 Examples:
-```HTML
+``` HTML
 <div>
   I want to have a tooltip when you hover over this div.
   <span class="tooltip">This is my tooltip, yay!</span>
@@ -29,7 +43,7 @@ Create the class you want to use for the tooltip.
 
 Example:
 
-```CSS
+``` CSS
 .tip {
   color: rgb(50,50,50);
   font-weight: light;
@@ -44,13 +58,22 @@ Example:
 
 ### Step 3
 
-Call the include the script in your code and then run the function ```mouseoverTooltips(".classNameHere");``` somewhere in your JS. This initates the function and tells it that .classNameHere is the tooltip class.
+Run the function ```mouseoverTooltips(".classNameHere");``` somewhere in your JS. This initates the function and tells it that .classNameHere is the tooltip class.
 
 Example:
 
-```JS
-<script type="text/javascript" src="tooltips.js"></script>
-<script type="text/javascript"> mouseoverTooltips(".tip"); </script>
+``` HTML
+<head>
+  ...
+  <script type="text/javascript"> mouseoverTooltips(".tip"); </script>
+  ...
+</head>
 ```
 
 That's it, you're done!
+
+## Example
+
+Preview the example shown here in this repository:
+
+https://htmlpreview.github.io/?https://github.com/MynockSpit/simpleTooltips/blob/master/tooltipsExample.html
